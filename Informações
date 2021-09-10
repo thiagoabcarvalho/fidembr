@@ -1,0 +1,27 @@
+1440px
+
+
+font 
+certa-sans
+cloud-lightBold
+
+color:
+Azul
+#0697aa terciária
+#0772b6 secundária
+#0e409f primária
+
+Verde
+#1b806f terciária
+#1e8a58 secundária
+#1e7236 primária
+
+root{
+--size--container: 1408px;
+--grid--container: 1fr minmax(auto, var(--size--container)) 1fr;
+}
+
+margin
+padding
+border
+box-sizing: border-box;

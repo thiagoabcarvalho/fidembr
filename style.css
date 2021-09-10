@@ -1,0 +1,36 @@
+:root{
+    --size--container: 1440px;
+    --grid--container: 1fr minmax(auto, var(--size--container)) 1fr;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+
+header{
+    display: grid;
+    grid-template-columns: var(--grid--container);
+}
+
+.logo-fidem{
+    grid-column: 2;    
+}
+
+section img{
+    width: 500px;
+    height: auto;
+    position: relative;
+    top: 200px;
+}
+
+form{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
