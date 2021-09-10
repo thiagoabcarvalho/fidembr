@@ -1,6 +1,6 @@
 :root{
-    --size--container: 1440px;
-    --grid--container: 1fr minmax(auto, var(--size--container)) 1fr;
+  /*  --size--container: 1440px;
+    --grid--container: 1fr minmax(auto, var(--size--container)) 1fr;*/
 }
 
 *{
@@ -10,27 +10,98 @@
     box-sizing: border-box;
 }
 
+/* BACKGROUND */
+
+.gradient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #0E409F, #0772B6, #0697AA, #02C2A4); 
+    /*Primeira informação é do grau do degrade*/
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+    /*identifica*/
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
 /* LOGO */
 
 header{
     display: grid;
-    grid-template-columns: var(--grid--container);
+    grid-template-columns: 1fr 720px 720px 1fr;
 }
 
 .logo-fidem{
     grid-column: 2;    
+    align-items: center;
+    /*acertar o alinhamento do logo*/
 }
 
 section img{
     width: 500px;
     height: auto;
-    position: relative;
-    top: 200px;
 }
 
 form{
-    grid-column: 2;
+    grid-column: 3;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+form input, select{
+    margin-top: 20px;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;    
+    border: solid 2px #ccc;
+    box-shadow: 2px 2px 6px black;
+}
+
+textarea{
+    margin-top: 20px;
+    width: 500px; /*deixar no máximo esse tamanho*/
+    height: 300px;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+    box-shadow: 2px 2px 6px black;
+}
+
+button{
+    cursor: pointer;
+    padding: 1em 1em;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #0e409f;
+    border: solid 2px #0772b6;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px #5f5f5f;
+}
+
+button:hover{
+    background-color: #0697aa;
+}
+
+button a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+
 
