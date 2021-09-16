@@ -3,6 +3,8 @@
     --grid--container: 1fr minmax(auto, var(--size--container)) 1fr;*/
 }
 
+/* PRECISO ARRUMAR O GRID */
+
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +43,7 @@
 
 /* LOGO */
 
-header{
+main{
     display: grid;
     grid-template-columns: 1fr 720px 720px 1fr;
 }
@@ -70,12 +72,12 @@ form{
 .formulario{
     padding: 1rem 3rem 1rem;
     min-width: 24rem;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px rgba(77, 77, 77, 0.281);
     border-radius: 15px;
     background: rgba(225, 225, 225, 0.1);
     overflow: hidden;
     backdrop-filter: blur(50px);
-}    
+}  
 
 label input, select{
     font-family: sans-serif;
@@ -86,19 +88,24 @@ label input, select{
     min-width: 24rem;    
     border-radius: 0.2rem;    
     border: 2px solid #e6e6e656; /*voltar para rever está cor*/
-    margin-top: 20px;    
+    margin-top: 20px;
+    outline: none;    
 }
 
-label p{
+select{
+    background: #0697aa; /* os dois ultimos numeros é a transparencia da cor */
+    color: white;
+}
+
+option:not(:checked) {
+    background-color: #0697AA;
+}
+
+label p, ::placeholder{
     color: white;
     font-size: 1.2rem;
     margin-left: 0.8rem;
     padding: 0 0.4rem;
-}
-
-
-label input:not(:focus) + p{
-    color: #7a7a7a56;
 }
 
 textarea{
@@ -109,14 +116,19 @@ textarea{
     border-radius: 5px;
     border: solid 2px #e6e6e656;
     background: transparent;
+    
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #02C2A4;
+    outline: none; /* tira a linha de formatação do navegador */
 }
 
 /* BOTÃO */
 
 .position-button{
     position: relative;
-    left: 38%;
-    
+    left: 38%;    
 }
 
 button{
@@ -131,6 +143,7 @@ button{
 
 button:hover{
     background-color: #0697aa;
+    
 }
 
 button a{
@@ -138,6 +151,42 @@ button a{
     font-weight: 600;
     color: white;
 }
+
+/* RODAPÉ */
+
+footer{
+display: flex;
+flex-direction: column;
+margin-top: 40px;
+align-items: center;
+}
+
+.warning input{
+    padding: 15px;
+    width: 600px;    
+    border-radius: 3px;
+    font-weight: 400;
+    margin: 20px;
+    color: #929292;
+    font-size: 16px;
+}
+
+
+.btn-foot{
+    padding: 1rem;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;    
+}
+
+
+
+
+
+
+
+
 
 
 

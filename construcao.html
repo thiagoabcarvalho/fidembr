@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+<!--     <link rel="stylesheet" href="./CSS/normalize.css"> -->
     <title>página de construção Fidem Brasil</title>
 </head>
 <body class="gradient">
     
     <header>
+
+        <main>
 
         <!-- LOGO -->
         <section class="logo-fidem">
@@ -20,35 +23,50 @@
         
         <!-- FORMULÁRIO -->
         <section class="formulario">
-        <form action="" method="post">
-            <label for="name">
-            <input class="form-contact" type="text" id="nome" placeholder="Nome">                
-            </label>
+            
+            <form action="" method="post">
+                <label for="name">
+                <input class="form-contact" type="text" id="nome" placeholder="Nome">                
+                </label>
 
-            <label for="email">
-            <input class="form-contact" type="text" id="email" placeholder="E-mail">                
-            </label>
+                <label for="email">
+                <input class="form-contact" type="text" id="email" placeholder="E-mail">                
+                </label>
 
-            <label for="empresa">
-            <input class="form-contact" type="text" id="empresa" placeholder="Empresa">                
-            </label>
+                <label for="empresa">
+                <input class="form-contact" type="text" id="empresa" placeholder="Empresa">                
+                </label>
 
-            <Label for="assunto">Assunto</Label>
-            <select name="assunto" name="assunto" id="assunto">
-                <option value="0">selecione o assunto</option>
-                <option value="">Orçamento</option>
-                <option value="">Financeiro</option>
-                <option value="">Comercial</option>
-                <option value="">Duvidas</option>
-            </select>
+                <Label for="assunto"></Label>
+                <select name="assunto" name="assunto" id="assunto">
+                    <option value="0">Assunto</option>
+                    <option value="">Orçamento</option>
+                    <option value="">Financeiro</option>
+                    <option value="">Comercial</option>
+                    <option value="">Duvidas</option>
+                </select>
 
-            <label for="mensagem">mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="digite aqui sua mensagem"></textarea>
-        </form>
-        
-        <button class="position-button"><a href="#">ENVIAR</a></button>
+                <label for="mensagem"></label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+            </form>
+
+            <button class="position-button"><a href="#">ENVIAR</a></button>
 
         </section>
+    </main>
+
+        <footer>
+            <div class="warning">
+                <h2>Estamos em construção</h2>
+                <p>Seja avisado quando o site estiver no ar!</p>
+                <input class="inp-foot" type="email" id="aviso" placeholder="deixe aqui o seu melhor e-mail">
+                
+                <button class="btn-foot">cadastrar e-mail</button>
+            </div>
+            <div class="rights">
+                <span>&copy 2021 - Todos os direitos reservados.</span>                
+            </div>
+        </footer>
     </header>
     
 </body>
