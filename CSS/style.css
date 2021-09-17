@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Roboto", sans-serif;
+}
+
 /* BACKGROUND */
 
 .gradient{
@@ -69,7 +73,7 @@ form{
     align-items: center;
 }
 
-.formulario{
+/* .formulario{
     padding: 1rem 3rem 1rem;
     min-width: 24rem;
     box-shadow: 10px 10px 20px rgba(77, 77, 77, 0.281);
@@ -77,14 +81,14 @@ form{
     background: rgba(225, 225, 225, 0.1);
     overflow: hidden;
     backdrop-filter: blur(50px);
-}  
+} */  
 
 label input, select{
     font-family: sans-serif;
     font-size: 1.2rem;
     color: #ffffff;
     background-color: transparent;    
-    padding: 1rem 3.2rem 1rem 1.2rem;
+    padding: 0.5rem 2.2rem 0.5rem 1rem;
     min-width: 24rem;    
     border-radius: 0.2rem;    
     border: 2px solid #e6e6e656; /*voltar para rever está cor*/
@@ -112,7 +116,7 @@ textarea{
     margin-top: 20px;
     padding: 1rem 3.2rem 1rem 1.2rem;
     min-width: 24rem;
-    height: 300px;
+    height: 250px;
     border-radius: 5px;
     border: solid 2px #e6e6e656;
     background: transparent;
@@ -137,12 +141,12 @@ button{
     width: 150px;
     border-radius: 5px;
     background-color: #0e409f;
-    border: solid 2px #0772b6;
+    border: solid 1px #1966e3;
     margin-top: 20px;
  }
 
 button:hover{
-    background-color: #0697aa;
+    background-color: #124aa3;
     
 }
 
@@ -162,22 +166,51 @@ align-items: center;
 }
 
 .warning input{
-    padding: 15px;
+    padding: 14px;
     width: 600px;    
     border-radius: 3px;
     font-weight: 400;
-    margin: 20px;
+    margin: 20px 0px;
     color: #929292;
     font-size: 16px;
 }
 
 
 .btn-foot{
+    margin-left: 1px;
+    background-color: #e3c602;
     padding: 1rem;
     width: 200px;
     color: white;
     font-weight: bold;
     text-transform: uppercase;    
+    color: #104496;
+}
+
+.btn-foot:hover{
+    background-color: #968509;
+    color: white;
+}
+
+.aviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.aviso h2{
+    color: #e3c602;    
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.aviso p{
+    color: white;
+    font-size: 1.5em;
+}
+
+.rights{
+    font-size: 0.1;
 }
 
 
